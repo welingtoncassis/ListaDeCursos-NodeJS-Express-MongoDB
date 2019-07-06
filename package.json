@@ -1,0 +1,22 @@
+{
+  "name": "lista-de-cursos",
+  "version": "1.0.0",
+  "description": "CRUD utilizando nodejs, express, mongoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/welingtoncassis/ListaDeCursos-NodeJS-Express-MongoDB.git"
+  },
+  "author": "welingtoncassis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/welingtoncassis/ListaDeCursos-NodeJS-Express-MongoDB/issues"
+  },
+  "homepage": "https://github.com/welingtoncassis/ListaDeCursos-NodeJS-Express-MongoDB#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
