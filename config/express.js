@@ -1,7 +1,7 @@
 var express = require('express');
+var load = require('express-load');
 var bodyParser = require('body-parser');
 
-var homeController = require('../app/controllers/home')();
 
 
 module.exports = function(){
@@ -11,7 +11,12 @@ module.exports = function(){
     app.use(express.static('./public'));
     app.use(bodyParser.json());
 
-    app.get('/',homeController.index)
+    //ordem de carregamento: models, controll, rotas
+    load('models', {cwd: 'app'})
+        .then('controllers')
+        .then('routes')
+        .into(app); // apos isso app.controllers.home
     
+
     return app;
 }
