@@ -1,9 +1,13 @@
 # ListaDeCursos-NodeJS-Express-MongoDB
 Projeto de site para listagem de cursos. Um CRUD utilizando NodeJs, Express, Mongoose e MongoDb
 
+npm install body-parser --save
+npm install express --save
+
+
 ## Estrutura MVC
 
-##Diretórios
+## Diretórios
 * app - contém os diretórios do mvc e o diretório de rotas
 * config - configuração de banco, autenticação etc..
 * public - contém os arquivos státicos
