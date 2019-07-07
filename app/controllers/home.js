@@ -1,20 +1,23 @@
-var cursos = [
-    {nome: 'JavaScript', categoria: 'front-end'},
-    {nome: 'Html', categoria: 'front-end'},
-    {nome: 'PHP', categoria: 'back-end'},
-    {nome: 'Java', categoria: 'back-end'},
-    {nome: 'Python', categoria: 'back-end'}
-]
 
 module.exports = function(app){
+    var Curso = app.models.curso;
 
     var controller = {
         index: function(req, res){
-            res.render('index', {cursos})
+            Curso.find({},[], {sort: {nome:1}}).exec().then((cursos)=>{
+                res.render('index', {cursos});
+            })
         },
         newItem: function(req, res){
-            cursos.push(req.body);
-            res.json(cursos);
+            var curso = new Curso(req.body);//json enviado na requisição
+            curso.save(function(err, curso){
+                if(err){
+                    res.status(500).end();
+                    console.error(err);
+                }else{
+                    res.json(curso);
+                }
+            })
         }
     }
 
