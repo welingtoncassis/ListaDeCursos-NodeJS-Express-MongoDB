@@ -6,6 +6,7 @@ npm install express --save
 npm install express-load --save
 npm install pug --save
 npm install ejs --save
+npm install mongoose --save
 
 
 ## Estrutura MVC
