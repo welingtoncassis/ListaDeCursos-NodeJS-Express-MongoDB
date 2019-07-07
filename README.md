@@ -4,6 +4,8 @@ Projeto de site para listagem de cursos. Um CRUD utilizando NodeJs, Express, Mon
 npm install body-parser --save
 npm install express --save
 npm install express-load --save
+npm install pug --save
+npm install ejs --save
 
 
 ## Estrutura MVC

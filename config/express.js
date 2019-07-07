@@ -10,6 +10,8 @@ module.exports = function(){
     app.set('port', 3000);
     app.use(express.static('./public'));
     app.use(bodyParser.json());
+    app.set('view engine', 'ejs');//configurando path das templates
+    app.set('views', './app/views');
 
     //ordem de carregamento: models, controll, rotas
     load('models', {cwd: 'app'})

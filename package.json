@@ -18,7 +18,9 @@
   "homepage": "https://github.com/welingtoncassis/ListaDeCursos-NodeJS-Express-MongoDB#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "ejs": "^2.6.2",
     "express": "^4.15.2",
-    "express-load": "^1.1.16"
+    "express-load": "^1.1.16",
+    "pug": "^2.0.4"
   }
 }
