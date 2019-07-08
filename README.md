@@ -1,12 +1,17 @@
 # ListaDeCursos-NodeJS-Express-MongoDB
 Projeto de site para listagem de cursos. Um CRUD utilizando NodeJs, Express, Mongoose e MongoDb
 
-npm install body-parser --save
-npm install express --save
-npm install express-load --save
-npm install pug --save
-npm install ejs --save
-npm install mongoose --save
+## Deploy
+* Projeto publicado na nuvem Heroku. Link: https://dry-reaches-63701.herokuapp.com/
+
+## Dependências
+
+* npm install body-parser --save
+* npm install express --save
+* npm install express-load --save
+* npm install pug --save
+* npm install ejs --save
+* npm install mongoose --save
 
 
 ## Estrutura MVC
