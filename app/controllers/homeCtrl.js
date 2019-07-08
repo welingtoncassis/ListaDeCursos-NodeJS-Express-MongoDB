@@ -1,6 +1,6 @@
 
 module.exports = function(app){
-    var Curso = app.models.curso;
+    var Curso = app.models.cursoModel;
 
     var controller = {
         index: function(req, res){
